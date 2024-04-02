@@ -55,6 +55,10 @@ p {
   margin-bottom: 16px;
 }
 
+.spacing {
+  margin: 0 20px 0 20px;
+}
+
 .nav-white {
   height: 50px;
   max-width: 980px;
@@ -150,15 +154,21 @@ footer {
   background-color: #79addc;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: #ffffff;
   margin-top: 100px;
 }
-footer p {
+footer .footer-wrapper {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-wrapper p {
   font-size: 12px;
   font-family: gill;
 }
-footer .socials {
+footer .footer-wrapper .socials {
   font-size: 22.46px;
 }
 
@@ -330,6 +340,11 @@ footer .socials {
 .home .form-container .form .message input {
   height: 192px;
 }
+.home .form-container .form .message {
+  padding: 20px 60px;
+  text-align: right;
+  box-sizing: border-box;
+}
 .home .form-container .form .button {
   max-width: 813px;
   height: 60.59px;
@@ -376,10 +391,7 @@ footer .socials {
     bottom: 55px;
   }
 }
-.about-container {
-  margin: 0 20px 0 20px;
-}
-.about-container .about {
+.about {
   max-width: 980px;
   min-height: 100px;
   margin: 0 auto;
@@ -388,11 +400,11 @@ footer .socials {
   margin-top: 90.5px;
   margin-bottom: 179px;
 }
-.about-container .about p {
+.about p {
   font-family: gill;
   font-size: 16px;
 }
-.about-container .about h1 {
+.about h1 {
   font-family: gill-light;
   font-weight: 900;
   font-size: 60px;
@@ -400,24 +412,24 @@ footer .socials {
   border-bottom: 2px solid black;
   margin-bottom: 36.5px;
 }
-.about-container .about h2 {
+.about h2 {
   font-family: gill-light;
   font-weight: 200;
   font-size: 40px;
   margin-top: 95px;
 }
-.about-container .about .h2-line {
+.about .h2-line {
   width: 230px;
   border-bottom: 2px solid black;
   margin-top: -12px;
 }
-.about-container .about .container {
+.about .container {
   max-width: 722px;
   min-height: 150px;
   margin-top: 37px;
   display: flex;
 }
-.about-container .about .container .image-holder {
+.about .container .image-holder {
   min-width: 260px;
   height: 150px;
   background-position: center;
@@ -425,18 +437,18 @@ footer .socials {
   background-size: cover;
   margin-right: 21px;
 }
-.about-container .about .container .client1 {
+.about .container .client1 {
   background-image: url(../images/about-client-01.jpg);
 }
-.about-container .about .container .client2 {
+.about .container .client2 {
   background-image: url(../images/about-client-02.jpg);
 }
-.about-container .about .container p {
+.about .container p {
   font-family: gill-italic;
   font-size: 16px;
   width: 385px;
 }
-.about-container .about .container h3 {
+.about .container h3 {
   top: 50px;
   text-align: right;
   margin: 52px -55px 0 0;
@@ -446,14 +458,14 @@ footer .socials {
 }
 
 @media all and (max-width: 800px) {
-  .about-container .about .container {
+  .about .container {
     flex-direction: column;
     align-items: center;
   }
-  .about-container .about .container .image-holder {
+  .about .container .image-holder {
     margin-bottom: 20px;
   }
-  .about-container .about .container h3 {
+  .about .container h3 {
     margin: 52px 0px 0 0;
   }
 }
@@ -561,6 +573,7 @@ footer .socials {
 
 .tour-wrapper {
   max-width: 980px;
+  background-color: indianred;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -570,6 +583,7 @@ footer .socials {
 .tour-wrapper .hero {
   height: 413px;
   width: 100%;
+  background-color: burlywood;
   color: white;
   font-family: gill-light;
   display: flex;
@@ -648,10 +662,12 @@ footer .socials {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .tour-wrapper .images-box .image-holder {
   width: 298px;
   height: 347px;
+  background-color: blue;
 }
 .tour-wrapper .images-box .israel-image1 {
   background-image: url("../images/israel-tour-01.jpg");
@@ -821,6 +837,7 @@ footer .socials {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: blue;
 }
 .tour-wrapper main .day h2 {
   font-family: gill-light;
@@ -853,4 +870,259 @@ footer .socials {
   text-transform: uppercase;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.specials-container {
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+.specials-container h1 {
+  font-size: 30px;
+  font-family: gill-light;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  margin-top: -35.5;
+}
+.specials-container .line {
+  width: 177px;
+  border-top: 2px solid black;
+}
+.specials-container .specials-box {
+  min-height: 287px;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.specials-container .specials-box .image-holder {
+  width: 199px;
+  height: 287px;
+}
+.specials-container .specials-box .specials1 {
+  background-image: url("../images/special-offer-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.specials-container .specials-box .specials2 {
+  background-image: url("../images/special-offer-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.specials-container .specials-box .text-holder {
+  height: 100%;
+  margin: 0 20px 0 20px;
+  font-family: gill-light;
+}
+.specials-container .specials-box .text-holder .trip-special h2 {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 5px;
+}
+.specials-container .specials-box .text-holder .trip-special h2 .off {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ff7d38;
+  margin-left: 20px;
+  word-spacing: normal;
+}
+.specials-container .specials-box .text-holder .trip-special .line {
+  margin-top: -15px;
+}
+.specials-container .specials-box .text-holder p {
+  font-size: 16px;
+  font-family: gill-light;
+  width: 280px;
+}
+.specials-container .specials-box .text-holder .learn-more {
+  position: relative;
+  top: 50px;
+  width: 133px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #79addc;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: gill;
+  color: white;
+  text-decoration: none;
+}
+.specials-container .specials-box .text-holder .learn-more a {
+  text-decoration: none;
+  color: white;
+}
+
+@media all and (max-width: 800px) {
+  .specials-container .specials-box {
+    align-items: center;
+    flex-direction: column;
+  }
+  .specials-container .specials-box .text-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin: 10px 0 50px 0;
+  }
+  .specials-container .specials-box .text-holder .trip-special {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .specials-container .specials-box .text-holder .trip-special h2 {
+    flex-direction: column;
+  }
+  .specials-container .specials-box .text-holder .trip-special h2 .off {
+    margin: 0;
+  }
+  .specials-container .specials-box .text-holder p {
+    text-align: center;
+  }
+}
+.blog-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: 55.5px;
+}
+.blog-wrapper h1 {
+  font-family: gill-light;
+}
+.blog-wrapper .line {
+  width: 75px;
+  border-bottom: 2px solid black;
+  margin-top: -8.5px;
+}
+.blog-wrapper .blog-container {
+  display: flex;
+  margin: 31.5px 0 100px 0;
+}
+.blog-wrapper .blog-container .calendar {
+  min-width: 60px;
+  height: 60px;
+  background-color: #79addc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.blog-wrapper .blog-container .calendar .num {
+  font-family: gill-bold;
+  font-size: 22px;
+}
+.blog-wrapper .blog-container .calendar .month {
+  font-family: gill-light;
+  font-size: 12px;
+}
+.blog-wrapper .blog-container .content {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  font-family: gill;
+}
+.blog-wrapper .blog-container .content .image-holder {
+  width: 100%;
+  height: 259px;
+  margin-bottom: 20px;
+  background-image: url("../images/blog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-wrapper .blog-container .content h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.blog-wrapper .blog-container .content p {
+  width: 380px;
+  font-size: 15px;
+  color: #79addc;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.contact-wrapper h1 {
+  font-family: gill-light;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 55.5px;
+}
+.contact-wrapper .line {
+  width: 146px;
+  border-bottom: 2px solid black;
+  margin-top: -8.5px;
+  margin: -8.5px 0 55.5px 0;
+}
+.contact-wrapper .contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-wrapper .contact-container aside {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 637px;
+  margin-right: 20px;
+}
+.contact-wrapper .contact-container aside .map {
+  display: flex;
+  width: 100%;
+  height: 442px;
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-wrapper .contact-container aside ul {
+  list-style: none;
+  line-height: 23px;
+}
+.contact-wrapper .contact-container .form {
+  display: flex;
+  flex-direction: column;
+  width: 529px;
+  height: 522px;
+}
+.contact-wrapper .contact-container .form input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f5f5f5;
+  padding: 21px;
+}
+.contact-wrapper .contact-container .form #message {
+  height: 199px;
+}
+.contact-wrapper .contact-container .button {
+  width: 167px;
+  height: 60px;
+  background-color: #79addc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: gill;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media all and (max-width: 800px) {
+  .contact-wrapper .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-wrapper .contact-container aside {
+    margin: 0;
+  }
+}

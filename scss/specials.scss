@@ -1,0 +1,128 @@
+.specials-container {
+  max-width: $content-width;
+  // background-color: darkslategray;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 55px;
+
+  h1 {
+    font-size: 30px;
+    font-family: gill-light;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    margin-top: -35.5;
+  }
+
+  .line {
+    width: 177px;
+    border-top: 2px solid black;
+  }
+
+  .specials-box {
+    min-height: 287px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 20px;
+
+    .image-holder {
+      width: 199px;
+      height: 287px;
+      // background-color: blue;
+    }
+
+    .specials1 {
+      @include add-background-image("../images/special-offer-01.jpg");
+    }
+
+    .specials2 {
+      @include add-background-image("../images/special-offer-02.jpg");
+    }
+
+    .text-holder {
+      height: 100%;
+      margin: 0 20px 0 20px;
+      font-family: gill-light;
+      .trip-special {
+        h2 {
+          display: flex;
+          text-transform: uppercase;
+          font-size: 30px;
+          word-spacing: 5px;
+
+          .off {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #ff7d38;
+            margin-left: 20px;
+            word-spacing: normal;
+          }
+        }
+
+        .line {
+          margin-top: -15px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-family: gill-light;
+        width: 280px;
+      }
+
+      .learn-more {
+        position: relative;
+        top: 50px;
+        width: 133px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $site-blue;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-family: gill;
+        color: white;
+        text-decoration: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .specials-container {
+    .specials-box {
+      align-items: center;
+      flex-direction: column;
+      .text-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        margin: 10px 0 50px 0;
+
+        .trip-special {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          h2 {
+            flex-direction: column;
+            .off {
+              margin: 0;
+            }
+          }
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
