@@ -505,7 +505,6 @@ footer .footer-wrapper .socials {
 .tours .tours-container .box {
   width: 236px;
   height: 304px;
-  background-color: cadetblue;
   margin: 0 0 55px 55px;
   background-position: center;
   background-repeat: no-repeat;
@@ -585,20 +584,16 @@ footer .footer-wrapper .socials {
   color: white;
   font-family: gill-light;
   display: flex;
+  justify-content: space-between;
 }
 .tour-wrapper .hero h1 {
-  position: absolute;
-  left: 80px;
-  top: 118px;
   font-size: 70px;
-  background-color: black;
+  max-height: 70px;
 }
 .tour-wrapper .hero p {
-  position: absolute;
-  top: 490px;
-  right: 0px;
   font-size: 17px;
-  margin-right: 10px;
+  align-self: flex-end;
+  margin: 0;
 }
 .tour-wrapper .israel-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url("../images/tour-01.jpg");

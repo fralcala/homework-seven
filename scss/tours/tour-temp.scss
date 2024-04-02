@@ -14,22 +14,18 @@
     color: white;
     font-family: gill-light;
     display: flex;
+    justify-content: space-between;
 
     h1 {
-      position: absolute;
-      left: 80px;
-      top: 118px;
       font-size: 70px;
-      background-color: black;
+      // background-color: black;
+      max-height: 70px;
     }
 
     p {
-      position: absolute;
-      top: 490px;
-      right: 0px;
-      // text-align: right;
       font-size: 17px;
-      margin-right: 10px;
+      align-self: flex-end;
+      margin: 0;
     }
   }
 
