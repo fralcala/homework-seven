@@ -573,7 +573,6 @@ footer .footer-wrapper .socials {
 
 .tour-wrapper {
   max-width: 980px;
-  background-color: indianred;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -583,22 +582,21 @@ footer .footer-wrapper .socials {
 .tour-wrapper .hero {
   height: 413px;
   width: 100%;
-  background-color: burlywood;
   color: white;
   font-family: gill-light;
   display: flex;
 }
 .tour-wrapper .hero h1 {
-  position: relative;
-  right: -30px;
-  top: 18px;
+  position: absolute;
+  left: 80px;
+  top: 118px;
   font-size: 70px;
+  background-color: black;
 }
 .tour-wrapper .hero p {
-  position: relative;
-  top: 395px;
-  right: -140px;
-  text-align: right;
+  position: absolute;
+  top: 490px;
+  right: 0px;
   font-size: 17px;
   margin-right: 10px;
 }
@@ -661,13 +659,12 @@ footer .footer-wrapper .socials {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .tour-wrapper .images-box .image-holder {
   width: 298px;
   height: 347px;
-  background-color: blue;
 }
 .tour-wrapper .images-box .israel-image1 {
   background-image: url("../images/israel-tour-01.jpg");
@@ -837,7 +834,6 @@ footer .footer-wrapper .socials {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blue;
 }
 .tour-wrapper main .day h2 {
   font-family: gill-light;
